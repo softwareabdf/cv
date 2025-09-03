@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Single Page Portfolio</title>
-  <style>
-:root{
+<style>
+
+  :root{
   --bg: #ffffff;
   --text: #0f172a;
   --muted: #475569;
@@ -225,42 +223,393 @@ a:hover { text-decoration: underline }
   .project-media{ grid-template-columns: 1fr; }
 }
 
-  </style>
-</head>
-<body>
+</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Abdelrahman Hassan — Portfolio</title>
+  <meta name="description" content="IT & operations professional: SAP finance workflows, backend automation, documentation systems, and network/server configuration." />
 
-  <!-- ===== HTML ===== -->
-  <header>
-    <nav>
-      <a href="#home" class="active">Home</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+</head>
+
+  
+<body>
+  
+  <a class="skip-link" href="#projects">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top">Abdelrahman Hassan</a>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <nav class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#systems">Systems</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#config">Configuration</a></li>
+          <li><a href="#background">Background</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-cta">
+        <a class="btn btn-outline" href="mailto:softwareabdf@gmail.com">Email</a>
+        <a class="btn btn-primary" href="tel:+966575045139">Call</a>
+      </div>
+    </div>
   </header>
 
-  <section id="home">
-    <h1>Welcome to My Portfolio</h1>
-    <p>This is the hero section with your intro.</p>
-  </section>
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1>IT operations, SAP finance workflows, and automation that just works</h1>
+        <p>
+          I build practical systems that cut time, reduce errors, and keep projects stable —
+          from SAP data pipelines to documentation tools and network/server setups.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">See projects</a>
+          <a class="btn btn-ghost" href="#contact">Get in touch</a>
+        </div>
+      </div>
+      <!-- Subtle abstract background only; no personal photo -->
+      <div class="hero-bg" aria-hidden="true"></div>
+    </section>
 
-  <section id="projects" class="alt">
-    <h2>Projects</h2>
-    <p>Showcase your work here.</p>
-  </section>
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="container">
+        <header class="section-head">
+          <h2>Key projects</h2>
+          <p class="muted">Selected work that delivered impact under tight timelines.</p>
+        </header>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <p>List your technical and soft skills here.</p>
-  </section>
+        <article class="project">
+          <div class="project-text">
+            <h3>Makkah Fire Cooling System Development</h3>
+            <p>
+              Worked as Accounts Department Assistant alongside Kidana and over 300 subcontractors
+              to deliver on time for 2024 Hajj preparation. Managed finance records, documentation,
+              and coordination for compliant, rapid retrieval.
+            </p>
+          </div>
+          <div class="project-media">
+            <figure class="media-card">
+              <img src="assets/img/Kidana.png" alt="Kidana Development logo" />
+              <figcaption class="muted">Kidana Development partner</figcaption>
+            </figure>
+            <figure class="media-card">
+              <img src="assets/img/makkah-map.png" alt="Makkah project map" />
+              <figcaption class="muted">Project location context</figcaption>
+            </figure>
+          </div>
+        </article>
 
-  <section id="contact" class="alt">
-    <h2>Contact</h2>
-    <p>Email: you@example.com</p>
-  </section>
+        <article class="project">
+          <div class="project-text">
+            <h3>STC New Data Center, Dammam</h3>
+            <p>
+              Contributed to project success in coordination with major companies, supporting documentation,
+              IT, and operations to maintain stable progress and quality.
+            </p>
+          </div>
+          <div class="project-media grid-3">
+            <figure class="media-card">
+              <img src="assets/img/clipboard-image.png" alt="Data center work screenshot 1" />
+            </figure>
+            <figure class="media-card">
+              <img src="assets/img/clipboard-image-6.png" alt="Data center work screenshot 2" />
+            </figure>
+            <figure class="media-card">
+              <img src="assets/img/image.png" alt="Data center work screenshot 3" />
+            </figure>
+          </div>
+        </article>
+      </div>
+    </section>
 
-  <footer>
-    <p>&copy; 2025 Your Name</p>
+    <!-- Joy and Presentation -->
+    <section class="section">
+      <div class="container">
+        <header class="section-head">
+          <h2>Joy and presentation</h2>
+          <p class="muted">Operational reliability with clean presentation for stakeholders.</p>
+        </header>
+
+        <div class="cards grid-3">
+          <article class="card">
+            <img src="assets/img/clipboard-image-7.png" alt="NVR system interface" />
+            <div class="card-body">
+              <span class="badge">Backup & Video Editing</span>
+              <h4>NVR system</h4>
+              <p>I conduct daily checks on the NVR device and network connectivity; I verify data integrity and backups.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="assets/img/clipboard-image-8.png" alt="Camera connectivity diagram" />
+            <div class="card-body">
+              <span class="badge">Connectivity</span>
+              <h4>Camera</h4>
+              <p>Cameras are wired to the network to record and stream back to the NVR for reliable capture and retrieval.</p>
+            </div>
+          </article>
+
+          <article class="card video-card">
+            <div class="video-wrap">
+              <iframe
+                title="Camera Montage for TCCF event"
+                src="https://www.youtube.com/embed/F-kXmxMLVqs"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="card-body">
+              <h4>Camera Montage for TCCF event</h4>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Systems -->
+    <section id="systems" class="section alt">
+      <div class="container">
+        <header class="section-head">
+          <h2>Systems that make things easy</h2>
+          <p class="muted">Practical tools that speed up finance, documentation, and compliance.</p>
+        </header>
+
+        <div class="cards grid-3">
+          <article class="card">
+            <img src="assets/img/clipboard-image-9.png" alt="Purchase Order system screenshot" />
+            <div class="card-body">
+              <span class="badge">Tested</span>
+              <h4>Purchase Order</h4>
+              <p>
+                Generates POs with add/modify items, auto totals, and auto‑attach quotations.
+                Saves complete PDF and Excel to the PO folder — standardized and ready.
+              </p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="assets/img/clipboard-image-10.png" alt="Documents system screenshot" />
+            <div class="card-body">
+              <span class="badge">Beta</span>
+              <h4>Documents system</h4>
+              <p>
+                Saves and generates documents such as RFIs as Word and complete PDFs, including attachments —
+                consistent naming and storage.
+              </p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="assets/img/clipboard-image-13.png" alt="Invoice system screenshot" />
+            <div class="card-body">
+              <span class="badge">Tested</span>
+              <h4>Invoice system</h4>
+              <p>
+                Records, saves, modifies, and organizes invoices; auto‑stores scans by month and vendor.
+                Compatible with SAP finance for smooth handover.
+              </p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="assets/img/sab-1.png" alt="SAB System v1.0 screenshot" />
+            <div class="card-body">
+              <span class="badge">Official</span>
+              <h4>SAB System v1.0</h4>
+              <p>
+                Complete SAB recording with imports from SAB and structured re‑entry via Excel and direct TXT import
+                for invoices, abstracts, general, and banking transactions.
+              </p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="assets/img/wordfile.png" alt="Format Duplicator screenshot" />
+            <div class="card-body">
+              <span class="badge">Tested</span>
+              <h4>Format Duplicator</h4>
+              <p>
+                Generate letters in seconds from a list (Name, ID, etc.) by mapping to any Word file template;
+                batch output with consistent formatting.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="container">
+        <header class="section-head">
+          <h2>Skills and qualifications</h2>
+        </header>
+
+        <div class="skills">
+          <div class="skill">
+            <span class="skill-kicker">SAP</span>
+            <h4>Project finance via SAP</h4>
+            <p class="muted">End‑to‑end entries, reconciliation, and reporting with accuracy and traceability.</p>
+          </div>
+
+          <div class="skill">
+            <span class="skill-kicker">Macros & Hotkeys</span>
+            <h4>Faster, safer input</h4>
+            <p class="muted">Record tasks and set hotkeys to accelerate and de‑risk repetitive work.</p>
+          </div>
+
+          <div class="skill">
+            <span class="skill-kicker">Programming & Formulas</span>
+            <h4>Automation & scripts</h4>
+            <p class="muted">
+              Auto‑save email attachments, scan and auto‑split documents, and build Excel logic to standardize filenames.
+            </p>
+          </div>
+
+          <div class="skill">
+            <span class="skill-kicker">Content Editing</span>
+            <h4>Clarity in delivery</h4>
+            <p class="muted">Edit PDFs, videos, and documents for clean presentation and print‑ready outputs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Configuration -->
+    <section id="config" class="section alt">
+      <div class="container">
+        <header class="section-head">
+          <h2>Configuration</h2>
+          <p class="muted">
+            New projects need clean setups. I configure networks, servers, extenders, and storage for secure,
+            stable operations.
+          </p>
+        </header>
+
+        <div class="cards grid-2">
+          <article class="card">
+            <img src="assets/img/clipboard-image-15.png" alt="Router configuration interface" />
+            <div class="card-body">
+              <h4>Router configuration (MAC filters)</h4>
+              <p>
+                Device‑level access controls, IP planning, and network segmentation to keep printers, cameras,
+                and NVR isolated from user networks.
+              </p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="assets/img/clipboard-image-16.png" alt="Cloud storage server illustration" />
+            <div class="card-body">
+              <h4>Cloud server configurations</h4>
+              <p>
+                On‑prem “cloud” with expandable disks: shared, secure storage with no monthly fees and remote‑like access
+                for teams and backups.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <blockquote class="quote">
+          <strong>No job too big, no task too small. You can count on me.</strong>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- Background -->
+    <section id="background" class="section">
+      <div class="container">
+        <header class="section-head">
+          <h2>Background</h2>
+        </header>
+
+        <div class="grid-2">
+          <div>
+            <p>
+              I’m from Sudan. I studied Software Engineering at SEGi University (Malaysia)
+              with a partnership program from the University of Central Lancashire (UK).
+            </p>
+            <p>
+              I’ve worked across Contracts, IT, Documentation, Finance, Warehouse, and as a Management Assistant —
+              highly adaptive as needed. I’ve served Al‑Rajhi for Building and Construction and Al‑Rajhi Telecom
+              since 2021 (part‑time) and 2022 (full‑time).
+            </p>
+          </div>
+
+          <div class="edu-cards">
+            <article class="edu-card">
+              <img src="assets/img/image%20(2).png" alt="UCLan logo and building" />
+              <div>
+                <h4>School of Physical Science and Computing</h4>
+                <p class="muted"><a href="https://www.uclan.ac.uk/" target="_blank" rel="noreferrer">University of Central Lancashire</a></p>
+              </div>
+            </article>
+
+            <article class="edu-card">
+              <img src="assets/img/clipboard-image-18.png" alt="SEGi University campus image" />
+              <div>
+                <h4>Bachelor of Software Engineering</h4>
+                <p class="muted"><a href="https://www.segi.edu.my/" target="_blank" rel="noreferrer">SEGi University</a></p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section alt">
+      <div class="container">
+        <header class="section-head">
+          <h2>Contact</h2>
+          <p class="muted">Based in Makkah, Saudi Arabia. Available for IT operations, automation, and documentation systems.</p>
+        </header>
+
+        <div class="contact-grid">
+          <a class="contact-card" href="mailto:softwareabdf@gmail.com">
+            <span class="contact-label">Email</span>
+            <span class="contact-value">softwareabdf@gmail.com</span>
+          </a>
+
+          <a class="contact-card" href="tel:+966575045139">
+            <span class="contact-label">Phone</span>
+            <span class="contact-value">+966 057 5045 139</span>
+          </a>
+
+          <a class="contact-card" href="https://www.linkedin.com/in/abdelrahman-hassan-94534a231" target="_blank" rel="noreferrer">
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-value">linkedin.com/in/abdelrahman-hassan-94534a231</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <small>© <span id="year"></span> Abdelrahman Hassan</small>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </footer>
 
   <script>
@@ -287,26 +636,7 @@ if (toggle && nav) {
 const y = document.getElementById('year');
 if (y) y.textContent = new Date().getFullYear();
 
-    // ===== JavaScript =====
-    const sections = document.querySelectorAll("section");
-    const navLinks = document.querySelectorAll("nav a");
-
-    window.addEventListener("scroll", () => {
-      let current = "";
-      sections.forEach(section => {
-        const sectionTop = section.offsetTop - 80;
-        if (pageYOffset >= sectionTop) {
-          current = section.getAttribute("id");
-        }
-      });
-      navLinks.forEach(link => {
-        link.classList.remove("active");
-        if (link.getAttribute("href") === `#${current}`) {
-          link.classList.add("active");
-        }
-      });
-    });
+    
   </script>
-
 </body>
 </html>
